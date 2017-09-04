@@ -1,0 +1,41 @@
+---
+document: modulemd
+version: 1
+data:
+    summary: Fonts module with most common fonts
+    description: This module is used for delivering most common fonts that
+                 are dependencies of other modules.
+    license:
+        module: [MIT]
+    dependencies:
+        buildrequires:
+            bootstrap: master
+        requires:
+            platform: master
+            platform-placeholder: master
+    references:
+        community: https://docs.pagure.org/modularity/
+        documentation: https://github.com/modularity-modules/fonts
+        tracker: https://github.com/modularity-modules/fonts
+    profiles:
+        default:
+            rpms:
+                - fontpackages-filesystem
+    api:
+        rpms:
+            - fontpackages-filesystem
+    components:
+        rpms:
+            aajohan-comfortaa-fonts:
+                rationale: Generated.
+                ref: f27
+            fontawesome-fonts:
+                rationale: Generated.
+                ref: f27
+            fontconfig:
+                rationale: Generated.
+                ref: f27
+            fontpackages-filesystem:
+                rationale: Generated.
+                ref: f27
+
